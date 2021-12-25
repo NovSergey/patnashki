@@ -1,0 +1,73 @@
+html, body{
+	height: 100%;
+
+}
+body{
+	margin: 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+#outer{
+	height: 600px;
+	width: 600px;
+	border: 1px solid black;
+	border-radius: 10px;
+	background-color: #8A2BE2;
+	position: relative;
+	
+}
+.cell{
+	position: absolute;
+	border-radius: 15px;
+	background-color: #4B0082;
+}
+.tile{
+	position: absolute;
+	background: #FF00FF;
+	border-radius: 15px;
+	font-size: 100px;
+	color: white;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	user-select: none;
+	transition: 0.5s ease;
+}
+
+.modal{
+	font-size: 90px;
+	color: white;
+	height: 100%;
+	width: 100%;
+	border-radius: inherit;
+	position: relative;
+	z-index: 1;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	user-select: none;
+	background-color: rgba(0,0,0,0.5);
+	visibility: hidden;
+	opacity: 0;
+	transition: 0.4s ease;
+}
+
+.modal_visible{
+	visibility: visible;
+	opacity: 1;
+}
+#select_n{
+	color: white;
+	background-color: #8A2BE2;
+	font-size: 25px;
+	height: 50px;
+	width: 50px;
+}
+#button{
+	color: white;
+	background-color: #8A2BE2;
+	font-size: 25px;
+	height: 50px;
+	width: 50px;
+}
